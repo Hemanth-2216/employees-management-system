@@ -1,0 +1,28 @@
+/* Ensure the page takes full height */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make the app container use flexbox */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+  }
+  
+  /* Ensure content expands to push footer down */
+  .content {
+    flex: 1; /* This ensures the content takes up remaining space */
+  }
+  
+  /* Push the footer to the bottom */
+  footer {
+    margin-top: auto;
+    background-color: black; /* or any color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
